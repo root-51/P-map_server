@@ -1,15 +1,17 @@
 //env
 require('dotenv').config();
 
-//create project 
+// create server
 const express = require('express');
 const app = express();
 
 const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.urlencoded({ extended: true }));
-app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
+
+const ejs = require('ejs');
 app.set('view engine', 'ejs')
 
 
@@ -29,3 +31,8 @@ MongoClient.connect(
         })
 
     });
+
+const path = require('path');
+app.get('/', function (request, response) {
+    response.render(path.join(__dirname, 'views', 'map.ejs'));
+})
