@@ -42,24 +42,29 @@
             <form class="form-inline">
                 <div class="form-group mx-sm-3 mb-2">
                     <label for="inputPassword2" class="sr-only">search</label>
-                    <input type="password" class="form-control" id="inputPassword2" placeholder="검색어 입력">
+                    <input type="text" class="form-control" id="inputPassword2" placeholder="검색어 입력">
                     <button type="submit" class="btn btn-primary mb-2">검색</button>
                 </div>
-                
             </form>
+            <% if (areaName) { %>
             <div class="card" style="width: 18rem;">
                 <img src="/img/cafeImg/cafe01.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">
-                        카페이름 
-                        <!-- role: {red: danger} {yellow: warning } {green:success } {blue: primary } -->
-                        <div class="alert alert-danger d-inline" role="alert">붐빔</div>
+                        <%= areaName %>
+                        <% if (areaCongestLevel === '붐빔') { %>
+                        <div class="alert alert-danger d-inline" role="alert"><%= areaCongestLevel %></div>
+                        <% } %>
                     </h5>
-                    <p class="card-text">주소</p>
-                    <p class="card-text">내용</p>
-                    
+                    <% if (areaCongestMessage) { %>
+                    <p class="card-text"><%= areaCongestMessage %></p>
+                    <% } %>
+                    <% if (time) { %>
+                    <p class="card-text"><%= time %></p>
+                    <% } %>
                 </div>
             </div>
+            <% } %>
         </aside>
     </div>
 </body>

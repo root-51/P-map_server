@@ -1,0 +1,35 @@
+<SeoulRtd.citydata>
+    <list_total_count>1</list_total_count>
+    <RESULT>
+        <RESULT.CODE>INFO-000</RESULT.CODE>
+        <RESULT.MESSAGE>정상 처리되었습니다.</RESULT.MESSAGE>
+    </RESULT>
+    <CITYDATA>
+        <AREA_NM>성수카페거리</AREA_NM>
+        <AREA_CD>POI068</AREA_CD>
+        <LIVE_PPLTN_STTS>
+            <LIVE_PPLTN_STTS>
+                <AREA_CONGEST_LVL>여유</AREA_CONGEST_LVL>
+                <AREA_CONGEST_MSG>사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요.</AREA_CONGEST_MSG>
+                <AREA_PPLTN_MIN>10000</AREA_PPLTN_MIN>
+                <AREA_PPLTN_MAX>12000</AREA_PPLTN_MAX>
+                <MALE_PPLTN_RATE>52.8</MALE_PPLTN_RATE>
+                <FEMALE_PPLTN_RATE>47.2</FEMALE_PPLTN_RATE>
+                <PPLTN_RATE_0>0.1</PPLTN_RATE_0>
+                <PPLTN_RATE_10>5.0</PPLTN_RATE_10>
+                <PPLTN_RATE_20>36.3</PPLTN_RATE_20>
+                <PPLTN_RATE_30>25.6</PPLTN_RATE_30>
+                <PPLTN_RATE_40>14.3</PPLTN_RATE_40>
+                <PPLTN_RATE_50>9.5</PPLTN_RATE_50>
+                <PPLTN_RATE_60>6.2</PPLTN_RATE_60>
+                <PPLTN_RATE_70>2.9</PPLTN_RATE_70>
+                <RESNT_PPLTN_RATE>16.7</RESNT_PPLTN_RATE>
+                <NON_RESNT_PPLTN_RATE>83.3</NON_RESNT_PPLTN_RATE>
+                <REPLACE_YN>N</REPLACE_YN>
+                <PPLTN_TIME>2023-07-05 22:10</PPLTN_TIME>
+                <FCST_YN>N</FCST_YN>
+            </LIVE_PPLTN_STTS>
+        </LIVE_PPLTN_STTS>
+        
+    </CITYDATA>
+</SeoulRtd.citydata>
